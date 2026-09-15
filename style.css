@@ -1,0 +1,159 @@
+/* إعدادات عامة وتثبيت ألوان الخلفية والخطوط */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f6f0; /* خلفية بيج كريمي هادئة */
+    color: #2c3e50;
+}
+
+/* تنسيق الشريط العلوي Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #ffffff;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo h2 {
+    color: #1b4332;
+    font-size: 22px;
+}
+
+.logo p {
+    font-size: 11px;
+    color: #6c757d;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #495057;
+    font-weight: 500;
+}
+
+.nav-links a.active, .nav-links a:hover {
+    color: #2d6a4f;
+    border-bottom: 2px solid #2d6a4f;
+    padding-bottom: 3px;
+}
+
+/* تنسيق الـ Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background: linear-gradient(135deg, #e8f5e9 0%, #f4f6f0 100%);
+    margin: 20px 40px;
+    border-radius: 20px;
+}
+
+.hero-content {
+    max-width: 500px;
+}
+
+.badge {
+    background-color: #d8f3dc;
+    color: #2d6a4f;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.hero-content h1 {
+    font-size: 38px;
+    color: #1b4332;
+    margin: 20px 0;
+    line-height: 1.2;
+}
+
+.hero-content p {
+    color: #52796f;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #1b4332;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background-color: #2d6a4f;
+}
+
+/* تنسيق قسم التصنيفات والكروت */
+.categories {
+    padding: 40px 50px;
+}
+
+.section-title {
+    margin-bottom: 25px;
+}
+
+.section-title h2 {
+    color: #1b4332;
+    font-size: 24px;
+}
+
+.section-title p {
+    color: #6c757d;
+    font-size: 14px;
+}
+
+/* تخطيط الكروت جنب بعضها */
+.cards-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    overflow: hidden;
+    min-width: 180px;
+    flex: 1;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+    border: 1px solid #e9ecef;
+}
+
+.card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #1b4332;
+    background-color: #ffffff;
+}
