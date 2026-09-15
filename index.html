@@ -1,42 +1,43 @@
-        <div class="hero-image">
-            <img src="plants-hero.jpg" alt="Plants Collection">
-        </div>
-    </section>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenLife - الصفحة الرئيسية</title>
+    <!-- ربط ملف الـ CSS بشكل صحيح -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    <!-- 3. Categories Section (قسم التصنيفات) -->
-    <section class="categories">
-        <div class="section-title">
-            <h2>🌱 Popular Plant Categories</h2>
+    <header class="main-header">
+        <h1>GreenLife</h1>
+        <p>مرحباً بكِ في عالم العناية بالنباتات الخضراء</p>
+    </header>
+
+    <main class="content-container">
+        <section class="category-box">
+            <h2>Popular Plant Categories</h2>
             <p>Explore different plants and find the best care for them.</p>
-        </div>
-        
-        <div class="cards-container">
-            <!-- كارت 1 -->
-            <div class="card">
-                <img src="indoor.jpg" alt="Indoor Plants">
-                <div class="card-footer">
-                    <span>Indoor Plants</span>
-                    <span>></span>
-                </div>
-            </div>
-            <!-- كارت 2 -->
-            <div class="card">
-                <img src="succulents.jpg" alt="Succulents">
-                <div class="card-footer">
-                    <span>Succulents</span>
-                    <span>></span>
-                </div>
-            </div>
-            <!-- كارت 3 -->
-            <div class="card">
-                <img src="flowering.jpg" alt="Flowering Plants">
-                <div class="card-footer">
-                    <span>Flowering Plants</span>
-                    <span>></span>
-                </div>
-            </div>
-        </div>
-    </section>
+            
+            <ul class="plants-list">
+                <li>
+                    <span class="icon">🌿</span>
+                    <strong>Indoor Plants</strong>
+                    <a href="#" class="arrow">&gt;</a>
+                </li>
+                <li>
+                    <span class="icon">🌵</span>
+                    <strong>Succulents</strong>
+                    <a href="#" class="arrow">&gt;</a>
+                </li>
+                <li>
+                    <span class="icon">🌸</span>
+                    <strong>Flowering Plants</strong>
+                    <a href="#" class="arrow">&gt;</a>
+                </li>
+            </ul>
+        </section>
+    </main>
 
 </body>
 </html>
