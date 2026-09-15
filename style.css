@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #f7f9f6;
+    background-color: #f4f1ea; /* لون خلفية بيج هادي مطابق للتصميم */
     color: #333;
 }
 
@@ -16,8 +16,8 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 15px 40px;
-    background-color: #ffffff;
-    border-bottom: 1px solid #eaeaea;
+    background-color: #fbf9f4;
+    border-bottom: 1px solid #e6e2d6;
 }
 
 .logo-area {
@@ -71,7 +71,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 40px 50px;
-    background: linear-gradient(135deg, #e8f0e8 0%, #f7f9f6 100%);
+    background: #eae5d9; /* خلفية هيرو بيج متناسقة */
     margin: 25px 40px;
     border-radius: 16px;
 }
@@ -81,7 +81,7 @@ body {
 }
 
 .hero-badge {
-    background-color: #d6e8d6;
+    background-color: #dbe4dc;
     color: #2b4d32;
     padding: 5px 12px;
     border-radius: 20px;
@@ -90,14 +90,14 @@ body {
 }
 
 .hero-text h1 {
-    font-size: 36px;
+    font-size: 34px;
     color: #1a3820;
     margin: 15px 0;
     line-height: 1.2;
 }
 
 .hero-text p {
-    color: #666;
+    color: #555;
     font-size: 14px;
     margin-bottom: 20px;
 }
@@ -121,7 +121,7 @@ body {
 
 /* Categories Section */
 .categories {
-    padding: 20px 40px 40px 40px;
+    padding: 10px 40px 40px 40px;
     text-align: center;
 }
 
@@ -132,32 +132,36 @@ body {
 }
 
 .cat-header p {
-    color: #777;
+    color: #666;
     font-size: 13px;
     margin-bottom: 25px;
 }
 
 .cards-container {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
     gap: 15px;
-    flex-wrap: wrap;
 }
 
 .card {
-    background: white;
+    background: #fbf9f4;
     border-radius: 10px;
     overflow: hidden;
-    width: calc(16.666% - 13px);
-    min-width: 150px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
-    flex-grow: 1;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.04);
+    border: 1px solid #eae5d9;
+}
+
+.img-box {
+    background: #e8e3d5;
+    padding: 10px;
+    text-align: center;
 }
 
 .card img {
     width: 100%;
-    height: 130px;
+    height: 120px;
     object-fit: cover;
+    border-radius: 6px;
 }
 
 .card-body {
@@ -165,7 +169,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 12px;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: bold;
     color: #333;
 }
@@ -181,6 +185,6 @@ body {
     padding: 25px;
     color: #666;
     font-size: 13px;
-    border-top: 1px solid #eaeaea;
+    border-top: 1px solid #e6e2d6;
     margin-top: 20px;
 }
