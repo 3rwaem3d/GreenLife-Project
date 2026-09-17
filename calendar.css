@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f8f3;
+    color: #26382b;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 20px 6%;
+    border-bottom: 1px solid #dfe8df;
+}
+
+header h1 {
+    color: #2f6b3f;
+    font-size: 28px;
+}
+
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+.calendar-section {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.calendar-section h2 {
+    text-align: center;
+    color: #2f6b3f;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.calendar-section > p {
+    text-align: center;
+    color: #68756b;
+    margin-bottom: 30px;
+}
+
+.calendar {
+    width: 100%;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.calendar-header h3 {
+    font-size: 22px;
+    color: #26382b;
+}
+
+.calendar-header button {
+    border: none;
+    background-color: #2f6b3f;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.calendar-header button:hover {
+    background-color: #245530;
+}
+
+.days,
+.calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 8px;
+}
+
+.days div {
+    text-align: center;
+    font-weight: bold;
+    color: #2f6b3f;
+    padding: 10px 5px;
+}
+
+.calendar-days div {
+    min-height: 70px;
+    padding: 12px;
+    background-color: #f8f5f0;
+    border-radius: 8px;
+}
+
+@media (max-width: 600px) {
+
+    main {
+        width: 94%;
+        margin: 25px auto;
+    }
+
+    .calendar-section {
+        padding: 18px;
+    }
+
+    .calendar-section h2 {
+        font-size: 24px;
+    }
+
+    .calendar-header h3 {
+        font-size: 18px;
+    }
+
+    .days,
+    .calendar-days {
+        gap: 4px;
+    }
+
+    .days div {
+        font-size: 12px;
+        padding: 8px 2px;
+    }
+
+    .calendar-days div {
+        min-height: 50px;
+        padding: 8px 5px;
+        font-size: 13px;
+    }
+}
+
+.selected {
+    background-color: #dcefdc !important;
+    border: 2px solid #2f6b3f;
+    color: #2f6b3f;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.calendar-days div {
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.calendar-days div:hover {
+    background-color: #edf5ed;
+}
+
+.task {
+    margin-top: 8px;
+    padding: 5px;
+    background-color: #dcefdc;
+    color: #2f6b3f;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
