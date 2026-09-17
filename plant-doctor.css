@@ -1,0 +1,1144 @@
+/* ================= GENERAL ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fdfdf9;
+    color: #103b35;
+}
+
+button,
+input {
+    font-family: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* ================= HEADER ================= */
+
+.header {
+    height: 86px;
+    background-color: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 5%;
+
+    border-bottom: 1px solid #eeeeea;
+}
+
+
+/* Logo */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 58px;
+    height: 58px;
+    object-fit: contain;
+}
+
+.logo-text h2 {
+    font-size: 28px;
+    color: #116044;
+    margin-bottom: 2px;
+}
+
+.logo-text p {
+    font-size: 12px;
+    color: #52706a;
+}
+
+.logo-text span {
+    color: #24835e;
+    margin: 0 3px;
+}
+
+
+/* Navbar */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 38px;
+}
+
+.navbar a {
+    position: relative;
+
+    font-size: 16px;
+    color: #253d3a;
+
+    padding: 31px 0;
+}
+
+.navbar a:hover {
+    color: #176b4f;
+}
+
+.navbar a.active {
+    color: #176b4f;
+    font-weight: 600;
+}
+
+.navbar a.active::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+
+    height: 3px;
+
+    background-color: #176b4f;
+    border-radius: 5px;
+}
+
+
+/* Header Icons */
+
+.header-icons {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.header-icons i {
+    font-size: 25px;
+    color: #123b35;
+}
+
+.header-icons i:hover {
+    color: #16805c;
+}
+
+
+/* ================= HERO ================= */
+
+.doctor-hero {
+    position: relative;
+
+    min-height: 1050px;
+
+    padding: 70px 5% 70px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #edf1e6 0%,
+            #f5f5ed 50%,
+            #edf1e6 100%
+        );
+
+    overflow: hidden;
+}
+
+
+/* Hero Content */
+
+.hero-content {
+    max-width: 720px;
+    position: relative;
+    z-index: 2;
+}
+
+.welcome-text {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    background-color: #e2ecdf;
+    color: #176447;
+
+    padding: 9px 17px;
+
+    border-radius: 25px;
+
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.welcome-text i {
+    font-size: 14px;
+}
+
+.hero-content h1 {
+    font-size: 62px;
+    line-height: 1.05;
+
+    color: #0c3935;
+
+    margin-bottom: 20px;
+}
+
+.hero-content h2 {
+    max-width: 650px;
+
+    font-size: 30px;
+    line-height: 1.3;
+
+    color: #1c654d;
+
+    margin-bottom: 18px;
+}
+
+.hero-content h2 i {
+    font-size: 24px;
+    margin-left: 5px;
+}
+
+.hero-text {
+    max-width: 560px;
+
+    font-size: 18px;
+    line-height: 1.6;
+
+    color: #526b67;
+}
+
+
+/* Hero Note */
+
+.hero-note {
+    position: absolute;
+
+    top: 75px;
+    right: 7%;
+
+    color: #28694f;
+
+    transform: rotate(-5deg);
+
+    font-family: cursive;
+
+    font-size: 20px;
+    line-height: 1.25;
+
+    text-align: center;
+}
+
+.hero-note i {
+    font-size: 17px;
+    margin-top: 5px;
+}
+
+
+/* ================= CHECKUP SECTION ================= */
+
+.checkup-section {
+    position: relative;
+    z-index: 3;
+
+    display: grid;
+    grid-template-columns: 58% 42%;
+
+    max-width: 1200px;
+
+    margin: 55px auto 0;
+}
+
+
+/* Checkup Card */
+
+.checkup-card {
+    background-color: rgba(255, 255, 255, 0.96);
+
+    border-radius: 16px;
+
+    padding: 32px;
+
+    box-shadow: 0 12px 35px rgba(34, 73, 59, 0.12);
+
+    border: 1px solid #e0e7df;
+
+    position: relative;
+    z-index: 2;
+}
+
+
+/* Checkup Header */
+
+.checkup-header {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 18px;
+
+    margin-bottom: 28px;
+}
+
+.checkup-icon {
+    width: 66px;
+    height: 66px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background-color: #e3ede1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkup-icon i {
+    font-size: 30px;
+    color: #176447;
+}
+
+.checkup-header h2 {
+    font-size: 28px;
+    margin-bottom: 7px;
+}
+.checkup-header p {
+    color: #637874;
+    line-height: 1.5;
+    font-size: 15px;
+}
+
+
+/* Input */
+
+.input-group {
+    margin-bottom: 25px;
+}
+
+.input-group label {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    color: #174e42;
+
+    margin-bottom: 10px;
+}
+
+.input-group label i {
+    color: #267754;
+}
+
+.input-group label span {
+    font-weight: normal;
+    color: #82908c;
+}
+
+.input-box {
+    height: 54px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 0 16px;
+
+    border: 1px solid #cfdcd5;
+
+    border-radius: 11px;
+
+    background-color: #ffffff;
+}
+
+.input-box i {
+    color: #4b8a6c;
+}
+
+.input-box input {
+    width: 100%;
+
+    border: none;
+    outline: none;
+
+    font-size: 14px;
+
+    color: #29443e;
+}
+
+.input-box input::placeholder {
+    color: #8b9d98;
+}
+
+
+/* Symptoms Title */
+
+.symptoms-section h3 {
+    font-size: 15px;
+    color: #174e42;
+
+    margin-bottom: 12px;
+}
+
+.symptoms-section h3 i {
+    color: #267754;
+    margin-right: 6px;
+}
+
+
+/* Symptoms Grid */
+
+.symptoms-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 12px;
+}
+
+
+/* Symptom Card */
+
+.symptom-card {
+    min-height: 96px;
+
+    display: flex;
+    align-items: center;
+
+    text-align: left;
+
+    padding: 13px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #dce5df;
+
+    border-radius: 12px;
+
+    transition: 0.3s;
+}
+
+.symptom-card:hover {
+    border-color: #73a88c;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 5px 15px rgba(45, 94, 73, 0.08);
+}
+
+
+/* Symptom Icon */
+
+.symptom-icon {
+    width: 48px;
+    height: 48px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background-color: #e5eee2;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-right: 11px;
+}
+
+.symptom-icon i {
+    font-size: 21px;
+    color: #277553;
+}
+
+
+/* Symptom Text */
+
+.symptom-info {
+    flex: 1;
+}
+
+.symptom-info h4 {
+    font-size: 15px;
+    color: #16483e;
+
+    margin-bottom: 5px;
+}
+
+.symptom-info p {
+    font-size: 12px;
+    line-height: 1.4;
+
+    color: #73827e;
+}
+
+.symptom-card > i {
+    font-size: 12px;
+    color: #277553;
+}
+
+
+/* Check Button */
+
+.check-button {
+    width: 100%;
+
+    height: 53px;
+
+    border: none;
+    border-radius: 30px;
+
+    background-color: #21845e;
+    color: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    margin-top: 23px;
+
+    transition: 0.3s;
+}
+
+.check-button:hover {
+    background-color: #176d4e;
+    transform: translateY(-2px);
+}
+
+.check-button i:first-child {
+    font-size: 18px;
+}
+
+.check-button .fa-arrow-right {
+    font-size: 15px;
+}
+
+
+/* ================= PLANT IMAGE ================= */
+
+.doctor-image {
+    position: relative;
+
+    height: 570px;
+
+    margin-left: -5px;
+
+    overflow: hidden;
+
+    border-radius: 0 16px 16px 0;
+}
+
+.doctor-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* Image Note */
+
+.image-note {
+    position: absolute;
+
+    top: 30px;
+    right: 35px;
+
+    color: #285f48;
+
+    font-family: cursive;
+
+    font-size: 19px;
+
+    line-height: 1.25;
+
+    text-align: center;
+
+    transform: rotate(-5deg);
+}
+
+.image-note i {
+    font-size: 16px;
+}
+
+
+/* ================= COMMON PROBLEMS ================= */
+
+.common-problems {
+    background-color: #ffffff;
+
+    padding: 70px 5% 75px;
+
+    text-align: center;
+}
+
+
+/* Section Title */
+
+.section-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 18px;
+}
+
+.section-title h2 {
+    font-size: 34px;
+    color: #103e38;
+}
+
+.section-title > i {
+    font-size: 22px;
+    color: #347957;
+}
+
+.section-subtitle {
+    color: #71827d;
+
+    font-size: 15px;
+
+    margin-top: 12px;
+    margin-bottom: 35px;
+}
+
+
+/* Problems Grid */
+
+.problems-grid {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 16px;
+}
+
+
+/* Problem Card */
+
+.problem-card {
+    min-height: 290px;
+
+    padding: 25px 20px;
+background-color: #ffffff;
+
+    border: 1px solid #dce5df;
+
+    border-radius: 13px;
+
+    box-shadow: 0 4px 14px rgba(31, 71, 56, 0.05);
+
+    transition: 0.3s;
+}
+
+.problem-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 10px 25px rgba(31, 71, 56, 0.1);
+}
+
+
+/* Problem Icon */
+
+.problem-icon {
+    width: 76px;
+    height: 76px;
+
+    margin: 0 auto 18px;
+
+    border-radius: 50%;
+
+    background-color: #e7efe4;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.problem-icon i {
+    font-size: 31px;
+    color: #287554;
+}
+
+
+/* Problem Text */
+
+.problem-card h3 {
+    font-size: 18px;
+
+    color: #123f38;
+
+    margin-bottom: 12px;
+}
+
+.problem-card p {
+    color: #71827d;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+
+    min-height: 63px;
+}
+
+.problem-card a {
+    display: inline-flex;
+    align-items: center;
+
+    gap: 8px;
+
+    margin-top: 15px;
+
+    color: #1d7957;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.problem-card a i {
+    font-size: 11px;
+
+    transition: 0.3s;
+}
+
+.problem-card a:hover i {
+    transform: translateX(4px);
+}
+
+
+/* ================= QUICK CARE ================= */
+
+.quick-care {
+    max-width: 1200px;
+
+    margin: 0 auto 60px;
+
+    padding: 28px 35px;
+
+    background-color: #edf3e9;
+
+    border-radius: 14px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 25px;
+
+    border: 1px solid #e0e9dd;
+}
+
+
+/* Care Intro */
+
+.care-intro {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    min-width: 280px;
+}
+
+.care-main-icon {
+    width: 62px;
+    height: 62px;
+
+    flex-shrink: 0;
+
+    background-color: #dce9d8;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.care-main-icon i {
+    font-size: 27px;
+    color: #216e50;
+}
+
+.care-intro h2 {
+    font-size: 21px;
+    color: #123f38;
+
+    margin-bottom: 5px;
+}
+
+.care-intro p {
+    font-size: 13px;
+    color: #687b75;
+}
+
+
+/* Care Items */
+
+.care-item {
+    flex: 1;
+
+    min-height: 65px;
+
+    border-left: 1px solid #b9cbbd;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+
+    color: #216c4e;
+}
+
+.care-item i {
+    font-size: 23px;
+}
+
+.care-item p {
+    font-size: 13px;
+    line-height: 1.4;
+    color: #3d6257;
+}
+
+
+/* Care Note */
+
+.care-note {
+    font-family: cursive;
+
+    font-size: 15px;
+
+    color: #28664d;
+
+    line-height: 1.25;
+
+    text-align: center;
+
+    transform: rotate(-4deg);
+
+    min-width: 95px;
+}
+
+
+/* ================= FOOTER ================= */
+
+.footer {
+    position: relative;
+
+    min-height: 100px;
+
+    background-color: #e9eee4;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 18px;
+
+    color: #24694e;
+
+    overflow: hidden;
+}
+
+.footer p {
+    font-family: cursive;
+
+    font-size: 16px;
+}
+
+.footer p span {
+    margin: 0 7px;
+}
+
+.footer-decoration {
+    font-size: 21px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1000px) {
+
+    .header {
+        padding: 0 3%;
+    }
+
+    .navbar {
+        gap: 18px;
+    }
+
+    .navbar a {
+        font-size: 14px;
+    }
+
+    .hero-content h1 {
+        font-size: 50px;
+    }
+
+    .hero-content h2 {
+        font-size: 25px;
+    }
+
+    .checkup-section {
+        grid-template-columns: 1fr;
+    }
+
+    .doctor-image {
+        height: 400px;
+
+        margin-left: 0;
+
+        border-radius: 0 0 16px 16px;
+    }
+
+    .problems-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .quick-care {
+        flex-wrap: wrap;
+    }
+
+    .care-intro {
+        width: 100%;
+    }
+
+    .care-item {
+        border-left: none;
+    }
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 700px) {
+
+    /* Header */
+
+    .header {
+        height: auto;
+
+        padding: 15px 20px;
+
+        flex-wrap: wrap;
+
+        gap: 15px;
+    }
+
+    .logo {
+        width: 100%;
+    }
+
+    .logo img {
+        width: 48px;
+        height: 48px;
+    }
+
+    .logo-text h2 {
+        font-size: 23px;
+    }
+
+    .navbar {
+        order: 3;
+
+        width: 100%;
+
+        overflow-x: auto;
+        justify-content: flex-start;
+
+        gap: 25px;
+
+        padding-bottom: 5px;
+    }
+
+    .navbar a {
+        white-space: nowrap;
+
+        padding: 10px 0;
+    }
+
+    .navbar a.active::after {
+        bottom: 0;
+    }
+
+    .header-icons {
+        position: absolute;
+
+        top: 28px;
+        right: 20px;
+    }
+
+
+    /* Hero */
+
+    .doctor-hero {
+        padding: 45px 20px 50px;
+
+        min-height: auto;
+    }
+
+    .hero-content {
+        text-align: center;
+    }
+
+    .welcome-text {
+        font-size: 12px;
+    }
+
+    .hero-content h1 {
+        font-size: 42px;
+    }
+
+    .hero-content h2 {
+        font-size: 22px;
+    }
+
+    .hero-text {
+        font-size: 15px;
+    }
+
+    .hero-note {
+        display: none;
+    }
+
+
+    /* Checkup */
+
+    .checkup-section {
+        margin-top: 35px;
+    }
+
+    .checkup-card {
+        padding: 22px 17px;
+    }
+
+    .checkup-header {
+        gap: 12px;
+    }
+
+    .checkup-icon {
+        width: 52px;
+        height: 52px;
+    }
+
+    .checkup-icon i {
+        font-size: 23px;
+    }
+
+    .checkup-header h2 {
+        font-size: 23px;
+    }
+
+    .checkup-header p {
+        font-size: 13px;
+    }
+
+    .symptoms-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .symptom-card {
+        min-height: 85px;
+    }
+
+    .doctor-image {
+        height: 350px;
+    }
+
+
+    /* Problems */
+
+    .common-problems {
+        padding: 50px 20px;
+    }
+
+    .section-title {
+        gap: 9px;
+    }
+
+    .section-title h2 {
+        font-size: 25px;
+    }
+
+    .section-title > i {
+        font-size: 17px;
+    }
+
+    .problems-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .problem-card {
+        min-height: auto;
+    }
+
+
+    /* Quick Care */
+
+    .quick-care {
+        margin: 0 20px 40px;
+
+        padding: 25px 20px;
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 15px;
+    }
+
+    .care-intro {
+        min-width: 0;
+    }
+
+    .care-item {
+        justify-content: flex-start;
+
+        border-top: 1px solid #c5d4c7;
+
+        padding-top: 15px;
+    }
+
+    .care-note {
+        display: none;
+    }
+
+
+    /* Footer */
+
+    .footer {
+        min-height: 80px;
+    }
+
+    .footer p {
+        font-size: 13px;
+    }
+
+}
+.symptom-card.selected {
+    border-color: #087b83;
+    background-color: #eef8f6;
+}
