@@ -137,19 +137,15 @@ a {
 
 .doctor-hero {
     position: relative;
-
-    min-height: 1050px;
-
-    padding: 70px 5% 70px;
-
-    background:
-        linear-gradient(
-            90deg,
-            #edf1e6 0%,
-            #f5f5ed 50%,
-            #edf1e6 100%
-        );
-
+    height: auto; /* خلينا الارتفاع مرن عشان العناصر تاخد راحتها وما تتداخلش */
+    min-height: auto; 
+    padding: 50px 5%;
+    background: linear-gradient(
+        90deg,
+        #edf1e6 0%,
+        #f5f5ed 50%,
+        #edf1e6 100%
+    );
     overflow: hidden;
 }
 
