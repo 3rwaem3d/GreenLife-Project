@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GreenLife - Plant Doctor</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <!-- Logo -->
+        <div class="logo">
+            <div class="logo-text">
+                <h2>GreenLife</h2>
+                <p>Healthy Plants <span>•</span> Happy You</p>
+            </div>
+
+        </div>
+
+
+        <!-- Navbar -->
+        <nav class="navbar">
+
+            <a href="index.html">Home</a>
+
+            <a href="plants.html">Plants</a>
+
+            <a href="my-plants.html">My Plants</a>
+
+            <a href="plant-doctor.html" class="active">
+                Plant Doctor
+            </a>
+
+            <a href="calendar.html">Calendar</a>
+
+        </nav>
+
+
+        <!-- Header Icons -->
+        <div class="header-icons">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <i class="fa-solid fa-user"></i>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ================= PLANT DOCTOR HERO ================= -->
+
+    <section class="doctor-hero">
+
+        <div class="hero-content">
+
+            <p class="welcome-text">
+                <i class="fa-solid fa-leaf"></i>
+                Welcome to Plant Doctor
+            </p>
+
+            <h1>
+                Plant Doctor
+            </h1>
+
+            <h2>
+                Let's find out what's wrong with your plant
+                <i class="fa-regular fa-heart"></i>
+            </h2>
+
+            <p class="hero-text">
+                Tell us about your plant's symptoms and
+                get simple, personalized care advice.
+            </p>
+
+        </div>
+
+
+        <!-- Small Note -->
+        <div class="hero-note">
+
+            <p>Healthy</p>
+            <p>plants</p>
+            <p>happy</p>
+            <p>homes</p>
+
+            <i class="fa-regular fa-heart"></i>
+
+        </div>
+
+
+        <!-- ================= CHECKUP ================= -->
+
+        <div class="checkup-section">
+
+
+            <!-- Checkup Card -->
+
+            <div class="checkup-card">
+
+                <div class="checkup-header">
+
+                    <div class="checkup-icon">
+                        <i class="fa-solid fa-stethoscope"></i>
+                    </div>
+
+                    <div>
+                        <h2>Plant Checkup</h2>
+
+                        <p>
+                            Tell us what you notice, and we'll help you
+                            find the cause and the right solution.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <!-- Plant Name -->
+
+                <div class="input-group">
+
+                    <label for="plant-name">
+
+                        <i class="fa-solid fa-leaf"></i>
+
+                        Plant Name
+
+                        <span>(optional)</span>
+
+                    </label>
+
+                    <div class="input-box">
+
+                        <i class="fa-solid fa-leaf"></i>
+
+                        <input
+                            type="text"
+                            id="plant-name"
+                            placeholder="e.g. Snake Plant, Monstera, Peace Lily...">
+
+                    </div>
+
+                </div>
+
+
+                <!-- Symptoms -->
+
+                <div class="symptoms-section">
+
+                    <h3>
+                        <i class="fa-solid fa-leaf"></i>
+                        What symptoms do you see?
+                    </h3>
+
+
+                    <div class="symptoms-grid">
+
+
+ <!-- Yellow Leaves -->
+
+<button class="symptom-card">
+   <div class="symptom-icon">
+                                <i class="fa-solid fa-leaf"></i>
+                            </div>
+
+                            <div class="symptom-info">
+
+                                <h4>Yellow Leaves</h4>
+
+                                <p>
+                                    Leaves are turning yellow
+                                    or pale
+                                </p>
+
+                            </div>
+
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </button>
+
+
+
+                        <!-- Brown Spots -->
+
+                        <button class="symptom-card">
+
+                            <div class="symptom-icon">
+                                <i class="fa-solid fa-circle-dot"></i>
+                            </div>
+
+                            <div class="symptom-info">
+
+                                <h4>Brown Spots</h4>
+
+                                <p>
+                                    Dark or brown spots
+                                    on leaves
+                                </p>
+
+                            </div>
+
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </button>
+
+
+
+                        <!-- Drooping -->
+
+                        <button class="symptom-card">
+
+                            <div class="symptom-icon">
+                                <i class="fa-solid fa-seedling"></i>
+                            </div>
+
+                            <div class="symptom-info">
+
+                                <h4>Drooping</h4>
+
+                                <p>
+                                    Leaves look wilted
+                                    or droopy
+                                </p>
+
+                            </div>
+
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </button>
+
+
+
+                        <!-- Pests -->
+
+                        <button class="symptom-card">
+
+                            <div class="symptom-icon">
+                                <i class="fa-solid fa-bug"></i>
+                            </div>
+
+                            <div class="symptom-info">
+
+                                <h4>Pests</h4>
+
+                                <p>
+                                    Insects, webs or
+                                    unusual bugs
+                                </p>
+
+                            </div>
+
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Check Button -->
+
+                <button class="check-button">
+
+                    <i class="fa-solid fa-leaf"></i>
+
+                    Check My Plant
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+            </div>
+
+
+
+            <!-- Plant Image -->
+
+            <div class="doctor-image">
+
+                <img
+                    src="image/plants hero.jfif"
+                    alt="Healthy Green Plant">
+
+                <div class="image-note">
+
+                    <p>Healthy</p>
+                    <p>plants</p>
+                    <p>thriving</p>
+
+                    <i class="fa-regular fa-heart"></i>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= COMMON PROBLEMS ================= -->
+
+    <section class="common-problems">
+
+        <div class="section-title">
+
+            <i class="fa-solid fa-leaf"></i>
+
+            <h2>Common Plant Problems</h2>
+
+            <i class="fa-solid fa-leaf"></i>
+
+        </div>
+
+        <p class="section-subtitle">
+            Learn about the most common issues and how to fix them.
+        </p>
+
+
+
+        <div class="problems-grid">
+
+
+            <!-- Problem 1 -->
+
+            <div class="problem-card"> 
+             <div class="problem-icon">
+                    <i class="fa-solid fa-leaf"></i>
+                </div>
+
+                <h3>Yellow Leaves</h3>
+
+                <p>
+                    Can be caused by overwatering,
+                    poor drainage, or lack of nutrients.
+                </p>
+
+                <a href="#">
+                    Learn More
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+
+
+            <!-- Problem 2 -->
+
+            <div class="problem-card">
+
+                <div class="problem-icon">
+                    <i class="fa-solid fa-leaf"></i>
+                </div>
+
+                <h3>Brown Spots</h3>
+
+                <p>
+                    Often caused by too much sun,
+                    fungal infections, or inconsistent watering.
+                </p>
+
+                <a href="#">
+                    Learn More
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+
+
+            <!-- Problem 3 -->
+
+            <div class="problem-card">
+
+                <div class="problem-icon">
+                    <i class="fa-solid fa-seedling"></i>
+                </div>
+
+                <h3>Drooping</h3>
+
+                <p>
+                    Usually means underwatering,
+                    overwatering, or temperature stress.
+                </p>
+
+                <a href="#">
+                    Learn More
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+
+
+            <!-- Problem 4 -->
+
+            <div class="problem-card">
+
+                <div class="problem-icon">
+                    <i class="fa-solid fa-bug"></i>
+                </div>
+
+                <h3>Pests</h3>
+
+                <p>
+                    Common pests include aphids,
+                    spider mites, and mealybugs.
+                </p>
+
+                <a href="#">
+                    Learn More
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= QUICK CARE TIPS ================= -->
+
+    <section class="quick-care">
+
+        <div class="care-intro">
+
+            <div class="care-main-icon">
+                <i class="fa-regular fa-lightbulb"></i>
+            </div>
+
+            <div>
+                <h2>Quick Care Tips</h2>
+
+                <p>
+                    Healthy plants start with simple habits.
+                </p>
+            </div>
+
+        </div>
+
+
+
+        <!-- Water -->
+
+        <div class="care-item">
+
+            <i class="fa-solid fa-droplet"></i>
+
+            <p>
+                Water<br>
+                wisely
+            </p>
+
+        </div>
+
+
+
+        <!-- Light -->
+
+        <div class="care-item">
+
+            <i class="fa-solid fa-sun"></i>
+
+            <p>
+                Give the right<br>
+                light
+            </p>
+
+        </div>
+
+
+
+        <!-- Nutrients -->
+
+        <div class="care-item">
+
+            <i class="fa-solid fa-seedling"></i>
+
+            <p>
+                Use balanced<br>
+                nutrients
+            </p>
+
+        </div>
+
+
+
+        <!-- Drainage -->
+
+        <div class="care-item">
+
+            <i class="fa-solid fa-box"></i>
+
+            <p>
+                Ensure good<br>
+                drainage
+            </p>
+
+        </div>
+
+
+
+        <!-- Note -->
+
+        <div class="care-note">
+
+            <p>Small</p>
+            <p>steps make</p>
+            <p>a big</p>
+            <p>difference</p>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="footer-decoration">
+            <i class="fa-solid fa-leaf"></i>
+        </div>
+
+        <p>
+            Better Plants
+            <span>•</span>
+            A Healthier You
+        </p>
+
+        <div class="footer-decoration">
+            <i class="fa-solid fa-leaf"></i>
+        </div>
+
+    </footer>
+
+<script src="rawda2.js"></script>
+</body>
+
+</html>   
